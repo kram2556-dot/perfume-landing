@@ -65,6 +65,20 @@ window.addEventListener('DOMContentLoaded', () => {
     window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
   });
 
+  const revealItems = document.querySelectorAll('[data-reveal]');
+  if ('IntersectionObserver' in window && revealItems.length) {
+    document.documentElement.classList.add('motion-enabled');
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    revealItems.forEach((item) => revealObserver.observe(item));
+  }
+
   document.querySelectorAll('#navbarResponsive .nav-link').forEach((link) => {
     link.addEventListener('click', () => {
       const menu = document.querySelector('#navbarResponsive');

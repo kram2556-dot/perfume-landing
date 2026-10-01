@@ -6,20 +6,20 @@ html(lang='ar', dir='rtl', data-lang='ar')
     meta(name='description', content='Légende Noire عطر فاخر بتركيبة شرقية من العنبر والعود والمسك الأسود. خصم 40%، شحن مجاني ودفع عند الاستلام.')
     meta(name='keywords', content='Légende Noire, عطر فاخر, عطور شرقية, عطر عود, عطر عنبر, عطر رجالي, عطر نسائي')
     meta(name='author', content='Légende Noire')
-    meta(name='robots', content='index, follow, max-image-preview:large')
+    meta(name='robots', content='noindex, nofollow')
     meta(name='theme-color', content='#0f0f11')
-    meta(property='og:type', content='product')
+    meta(property='og:type', content='website')
     meta(property='og:site_name', content='Légende Noire')
     meta(property='og:title', content='Légende Noire | العطر الذي يترك أثراً')
     meta(property='og:description', content='تركيبة شرقية راقية من العنبر والعود والمسك الأسود. خصم 40% وشحن مجاني والدفع عند الاستلام.')
-    meta(property='og:image', content='https://files.manuscdn.com/search-media/310519663682894950/agJbzxkmjzwhnHB6RpA4aF/sJDBHvWgtVSso33eRvngHf.jpg')
+    meta(property='og:image', content='https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=800&q=80')
     meta(property='og:image:alt', content='زجاجة عطر Légende Noire فاخرة')
     meta(name='twitter:card', content='summary_large_image')
     meta(name='twitter:title', content='Légende Noire | The scent that stays')
     meta(name='twitter:description', content='A refined oriental fragrance of amber, aged oud and black musk. 40% off with cash on delivery.')
-    meta(name='twitter:image', content='https://files.manuscdn.com/search-media/310519663682894950/agJbzxkmjzwhnHB6RpA4aF/sJDBHvWgtVSso33eRvngHf.jpg')
+    meta(name='twitter:image', content='https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=800&q=80')
     script(type='application/ld+json').
-      {"@context":"https://schema.org","@type":"Product","name":"Légende Noire","description":"عطر فاخر بتركيبة شرقية من العنبر والعود والمسك الأسود.","image":["https://files.manuscdn.com/search-media/310519663682894950/agJbzxkmjzwhnHB6RpA4aF/sJDBHvWgtVSso33eRvngHf.jpg"],"brand":{"@type":"Brand","name":"Légende Noire"},"offers":{"@type":"Offer","priceCurrency":"SAR","price":"179","availability":"https://schema.org/InStock"}}
+      {"@context":"https://schema.org","@type":"WebPage","name":"Légende Noire — Premium Fragrance Landing Page Demo","description":"Demo template for a premium fragrance landing page."}
     title Légende Noire | العطر الذي يترك أثراً
     link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
     link(rel='preconnect', href='https://fonts.googleapis.com')
@@ -67,7 +67,7 @@ html(lang='ar', dir='rtl', data-lang='ar')
         .row.align-items-center.g-5
           .col-lg-6.order-lg-2
             .hero-product
-              img(src='assets/img/perfume/hero-bottle.jpg', alt='زجاجة عطر Légende Noire داكنة وفاخرة / Dark luxury Légende Noire perfume bottle')
+              img(src='assets/img/perfume/hero-bottle.webp', alt='زجاجة عطر فاخرة بالأسود والذهبي / Black and gold luxury perfume bottle', width='800', height='1200')
               span.hero-badge LÉGENDE<br />NOIRE
           .col-lg-6.order-lg-1
             p.masthead-subheading
@@ -121,7 +121,7 @@ html(lang='ar', dir='rtl', data-lang='ar')
             span.lang-en Three promises that make Légende Noire different.
         .row.text-center.g-4.mt-4
           .col-md-4
-            .service-card
+            .service-card(data-reveal)
               span.service-icon ✦
               h4
                 span.lang-ar ثبات يدوم
@@ -130,7 +130,7 @@ html(lang='ar', dir='rtl', data-lang='ar')
                 span.lang-ar تركيز غني يرافقك حتى 48 ساعة.
                 span.lang-en A rich concentration that stays up to 48 hours.
           .col-md-4
-            .service-card
+            .service-card(data-reveal)
               span.service-icon ◈
               h4
                 span.lang-ar فوحان متوازن
@@ -139,7 +139,7 @@ html(lang='ar', dir='rtl', data-lang='ar')
                 span.lang-ar حضور واضح يترك أثراً دون مبالغة.
                 span.lang-en Distinctive, elegant projection — never overwhelming.
           .col-md-4
-            .service-card
+            .service-card(data-reveal)
               span.service-icon ❖
               h4
                 span.lang-ar عبوة فاخرة
@@ -161,9 +161,9 @@ html(lang='ar', dir='rtl', data-lang='ar')
             span.lang-en The fragrance unfolds gracefully from first spray to final trail.
         .row.g-4.mt-4
           .col-lg-4.col-md-6
-            article.note-card
+            article.note-card(data-reveal)
               .note-photo
-                img(src='assets/img/perfume/product-full.jpg', alt='زجاجة Légende Noire كاملة / Full Légende Noire bottle', width='847', height='1400', loading='lazy')
+                img(src='assets/img/perfume/product-full.webp', alt='زجاجة Légende Noire كاملة / Full Légende Noire bottle', width='800', height='533', loading='lazy')
                 span.note-number
                   span.lang-ar 01 / الزجاجة كاملة
                   span.lang-en 01 / FULL BOTTLE
@@ -174,9 +174,9 @@ html(lang='ar', dir='rtl', data-lang='ar')
                 span.lang-ar الزجاجة كاملة بتفاصيلها الداكنة ولمعتها الفاخرة.
                 span.lang-en The complete bottle, framed to show its dark, refined finish.
           .col-lg-4.col-md-6
-            article.note-card
+            article.note-card(data-reveal)
               .note-photo
-                img(src='assets/img/perfume/product-detail.jpg', alt='تفاصيل غطاء زجاجة Légende Noire / Légende Noire cap detail', width='1400', height='1285', loading='lazy')
+                img(src='assets/img/perfume/product-detail.webp', alt='تفاصيل غطاء زجاجة Légende Noire / Légende Noire cap detail', width='800', height='1200', loading='lazy')
               span.note-number
                 span.lang-ar 02 / التفاصيل
                 span.lang-en 02 / DETAILS
@@ -187,9 +187,9 @@ html(lang='ar', dir='rtl', data-lang='ar')
                 span.lang-ar لقطة مقرّبة للغطاء والكتف اللامع للزجاجة.
                 span.lang-en A close view of the cap and the bottle's polished shoulder.
           .col-lg-4.col-md-6
-            article.note-card
+            article.note-card(data-reveal)
               .note-photo
-                img(src='assets/img/perfume/product-gift.jpg', alt='زجاجة Légende Noire بتكوين هدية فاخر / Légende Noire gift-ready presentation', width='1224', height='1400', loading='lazy')
+                img(src='assets/img/perfume/product-gift.webp', alt='زجاجة Légende Noire بتكوين هدية فاخر / Légende Noire gift-ready presentation', width='800', height='533', loading='lazy')
               span.note-number
                 span.lang-ar 03 / الهدية
                 span.lang-en 03 / GIFT
@@ -203,7 +203,7 @@ html(lang='ar', dir='rtl', data-lang='ar')
       .container
         .row.align-items-center.g-5
           .col-lg-6
-            .about-photo
+            .about-photo(data-reveal)
               img(src='assets/img/perfume/oud-smoke.jpg', alt='دخان بخور عود فاخر / Luxurious oud incense smoke', loading='lazy')
           .col-lg-6
             p.section-kicker
@@ -245,7 +245,7 @@ html(lang='ar', dir='rtl', data-lang='ar')
             span.lang-en A trail worth telling.
         .row.g-4.mt-4
           .col-lg-4
-            article.review-card
+            article.review-card(data-reveal)
               .stars ★★★★★
               p.lang-ar «رائحة فخمة وهادئة، وكل من حولي سألني عنها. أصبحت توقيعي اليومي.»
               p.lang-en “Refined and quietly luxurious. Everyone asked about it — it is my everyday signature now.”
@@ -253,7 +253,7 @@ html(lang='ar', dir='rtl', data-lang='ar')
                 span.lang-ar نورة — طلب موثق
                 span.lang-en Noura — Verified order
           .col-lg-4
-            article.review-card
+            article.review-card(data-reveal)
               .stars ★★★★★
               p.lang-ar «فكرة العينة ممتازة. جربتها أولاً، وبعدها فتحت العبوة وأنا مطمئن.»
               p.lang-en “The sample is such a thoughtful touch. I tried it first, then opened the bottle with confidence.”
@@ -261,7 +261,7 @@ html(lang='ar', dir='rtl', data-lang='ar')
                 span.lang-ar سلمان — طلب موثق
                 span.lang-en Salman — Verified order
           .col-lg-4
-            article.review-card
+            article.review-card(data-reveal)
               .stars ★★★★★
               p.lang-ar «التغليف أنيق والعطر ثابت فعلاً. هدية فاخرة لنفسي ولمن أحب.»
               p.lang-en “Elegant packaging and genuinely lasting. A beautiful gift — for myself and someone I love.”
@@ -294,7 +294,7 @@ html(lang='ar', dir='rtl', data-lang='ar')
                 small
                   span.lang-ar المتبقي 7 قطع فقط من أصل 30.
                   span.lang-en Only 7 of 30 bottles remain at the discounted price.
-        form#order-form.order-form
+        form#order-form.order-form(data-reveal)
           h3
             span.lang-ar تفاصيل الطلب
             span.lang-en Order details
