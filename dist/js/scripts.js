@@ -5,8 +5,8 @@
 */
 window.addEventListener('DOMContentLoaded', () => {
   const root = document.documentElement;
-  const toggle = document.querySelector('#language-toggle');
-  const orderForm = document.querySelector('#order-form');
+  const languageToggle = document.querySelector('#language-toggle');
+  const form = document.querySelector('#order-form');
   const status = document.querySelector('.form-status');
   const whatsappNumber = '201000000000';
 
@@ -14,26 +14,50 @@ window.addEventListener('DOMContentLoaded', () => {
     root.dataset.lang = language;
     root.lang = language;
     root.dir = language === 'ar' ? 'rtl' : 'ltr';
-    toggle.textContent = language === 'ar' ? 'EN' : 'عربي';
-    document.title = language === 'ar' ? 'عطر أسطورة | سر الحضور الذي لا يُنسى' : 'As6oura | The signature that stays';
-    localStorage.setItem('as6oura-language', language);
+    languageToggle.textContent = language === 'ar' ? 'EN' : 'عربي';
+    document.title = language === 'ar' ? 'Légende Noire | العطر الذي يترك أثراً' : 'Légende Noire | The scent that stays';
+    localStorage.setItem('legende-language', language);
   };
+  setLanguage(localStorage.getItem('legende-language') === 'en' ? 'en' : 'ar');
+  languageToggle.addEventListener('click', () => setLanguage(root.dataset.lang === 'ar' ? 'en' : 'ar'));
 
-  const savedLanguage = localStorage.getItem('as6oura-language');
-  setLanguage(savedLanguage === 'en' ? 'en' : 'ar');
-  toggle.addEventListener('click', () => setLanguage(root.dataset.lang === 'ar' ? 'en' : 'ar'));
+  const countdown = document.querySelector('#countdown');
+  let remaining = (4 * 60 * 60) + (12 * 60) + 35;
+  const updateCountdown = () => {
+    const hours = String(Math.floor(remaining / 3600)).padStart(2, '0');
+    const minutes = String(Math.floor((remaining % 3600) / 60)).padStart(2, '0');
+    const seconds = String(remaining % 60).padStart(2, '0');
+    countdown.textContent = `${hours}:${minutes}:${seconds}`;
+    remaining = remaining > 0 ? remaining - 1 : (4 * 60 * 60) + (12 * 60) + 35;
+  };
+  updateCountdown();
+  window.setInterval(updateCountdown, 1000);
 
-  orderForm.addEventListener('submit', (event) => {
+  const sale = document.querySelector('#recent-sale');
+  const saleNames = ['محمد', 'سارة', 'أحمد', 'ريم'];
+  const saleCities = ['المنصورة', 'القاهرة', 'الإسكندرية', 'جدة'];
+  let saleIndex = 0;
+  const showSale = () => {
+    document.querySelector('#sale-name').textContent = saleNames[saleIndex];
+    document.querySelector('#sale-city').textContent = `من ${saleCities[saleIndex]} / ${saleCities[saleIndex]}`;
+    sale.classList.add('is-visible');
+    window.setTimeout(() => sale.classList.remove('is-visible'), 4800);
+    saleIndex = (saleIndex + 1) % saleNames.length;
+  };
+  window.setTimeout(showSale, 4200);
+  window.setInterval(showSale, 14000);
+
+  form.addEventListener('submit', (event) => {
     event.preventDefault();
-    if (!orderForm.reportValidity()) return;
-    const data = new FormData(orderForm);
-    const isEnglish = root.dataset.lang === 'en';
-    const message = isEnglish
-      ? ['Hello, I would like to order As6oura perfume.', `Name: ${data.get('name')}`, `Phone: ${data.get('phone')}`, `Address: ${data.get('address')}`, `City: ${data.get('city')}`, `Bundle: ${data.get('package')}`, 'Payment: Cash on delivery'].join('\n')
-      : ['مرحباً، أرغب في طلب عطر أسطورة.', `الاسم: ${data.get('name')}`, `رقم الهاتف: ${data.get('phone')}`, `العنوان: ${data.get('address')}`, `المدينة: ${data.get('city')}`, `الباقة: ${data.get('package')}`, 'طريقة الدفع: الدفع عند الاستلام'].join('\n');
-    status.textContent = isEnglish ? 'Opening WhatsApp with your order details...' : 'جاري فتح واتساب برسالة الطلب...';
+    if (!form.reportValidity()) return;
+    const data = new FormData(form);
+    const english = root.dataset.lang === 'en';
+    const message = english
+      ? ['Hello, I would like to order Légende Noire.', `Name: ${data.get('name')}`, `Phone: ${data.get('phone')}`, `Address: ${data.get('address')}`, `City: ${data.get('city')}`, `Bundle: ${data.get('package')}`, 'Payment: Cash on delivery'].join('\n')
+      : ['مرحباً، أرغب في طلب عطر Légende Noire.', `الاسم: ${data.get('name')}`, `رقم الهاتف: ${data.get('phone')}`, `العنوان: ${data.get('address')}`, `المدينة: ${data.get('city')}`, `الباقة: ${data.get('package')}`, 'طريقة الدفع: الدفع عند الاستلام'].join('\n');
+    status.textContent = english ? 'Opening WhatsApp with your order details...' : 'جاري فتح واتساب برسالة الطلب...';
     window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
   });
 
-  if (window.AOS) AOS.init({ once: true, duration: 850, offset: 70, easing: 'ease-out-cubic' });
+  if (window.AOS) AOS.init({ once: true, duration: 700, offset: 65, easing: 'ease-out-cubic' });
 });
