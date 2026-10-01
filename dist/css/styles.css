@@ -11820,3 +11820,12 @@ html[data-lang=en] .note-number {
     transform: none;
   }
 }
+/* Keep Hero trust metrics in normal document flow below the CTA. */
+.masthead .hero-trust {
+  position: relative !important;
+  inset: auto !important;
+  float: none !important;
+  clear: both;
+  width: 100%;
+  z-index: 1;
+}
