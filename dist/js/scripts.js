@@ -65,5 +65,12 @@ window.addEventListener('DOMContentLoaded', () => {
     window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
   });
 
-  if (window.AOS) AOS.init({ once: true, duration: 700, offset: 65, easing: 'ease-out-cubic' });
+  document.querySelectorAll('#navbarResponsive .nav-link').forEach((link) => {
+    link.addEventListener('click', () => {
+      const menu = document.querySelector('#navbarResponsive');
+      if (menu.classList.contains('show') && window.bootstrap) {
+        bootstrap.Collapse.getOrCreateInstance(menu).hide();
+      }
+    });
+  });
 });

@@ -10842,6 +10842,11 @@ textarea.form-control-lg {
   box-sizing: border-box;
 }
 
+html, body {
+  width: 100%;
+  min-width: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
