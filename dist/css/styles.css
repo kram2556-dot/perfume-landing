@@ -11641,3 +11641,116 @@ img {
     scroll-behavior: auto !important;
   }
 }
+/* Final mobile and floating-element refinements */
+#mainNav {
+  min-height: 64px;
+  background: rgba(15, 15, 17, 0.97);
+}
+
+#mainNav .navbar-toggler {
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  padding: 6px 9px;
+}
+
+#mainNav .language-toggle {
+  order: 2;
+  -webkit-margin-start: auto;
+          margin-inline-start: auto;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+
+#mainNav .navbar-toggler {
+  order: 3;
+}
+
+.note-number {
+  display: block;
+  direction: rtl;
+  letter-spacing: 0;
+}
+
+html[data-lang=en] .note-number {
+  direction: ltr;
+}
+
+.feature-line {
+  gap: 20px;
+}
+
+.feature-line > span {
+  flex: 0 0 auto;
+  -webkit-margin-end: 3px;
+          margin-inline-end: 3px;
+}
+
+.recent-sale {
+  bottom: 100px;
+  max-width: 280px;
+}
+
+.floating-wa {
+  background: #111217;
+  border: 1px solid var(--gold);
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5333333333);
+}
+
+.floating-wa small, .floating-wa .small {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  #mainNav {
+    top: 34px;
+    min-height: 57px;
+  }
+  #mainNav .language-toggle {
+    -webkit-margin-start: auto;
+            margin-inline-start: auto;
+    -webkit-margin-end: 8px;
+            margin-inline-end: 8px;
+  }
+  .masthead-heading {
+    font-size: 32px;
+    line-height: 1.5;
+  }
+  .hero-trust {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 8px;
+  }
+  .hero-trust .col-4 {
+    width: auto;
+    max-width: none;
+    padding: 0;
+    text-align: center;
+  }
+  .hero-trust .col-4:last-child {
+    grid-column: 1/-1;
+  }
+  .hero-actions .btn {
+    font-size: 13px;
+    padding: 0.72rem 0.8rem;
+  }
+  .recent-sale {
+    right: 14px;
+    bottom: 86px;
+    max-width: 250px;
+  }
+  .floating-wa {
+    left: 14px;
+    bottom: 14px;
+    width: 57px;
+    height: 57px;
+  }
+  html[data-lang=en] .floating-wa {
+    left: auto;
+    right: 14px;
+  }
+  html[data-lang=en] .recent-sale {
+    left: 14px;
+    right: auto;
+  }
+}

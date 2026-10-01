@@ -12,19 +12,20 @@ html(lang='ar', dir='rtl', data-lang='ar')
     meta(property='og:site_name', content='Légende Noire')
     meta(property='og:title', content='Légende Noire | العطر الذي يترك أثراً')
     meta(property='og:description', content='تركيبة شرقية راقية من العنبر والعود والمسك الأسود. خصم 40% وشحن مجاني والدفع عند الاستلام.')
-    meta(property='og:image', content='https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1200&q=88')
+    meta(property='og:image', content='https://files.manuscdn.com/search-media/310519663682894950/agJbzxkmjzwhnHB6RpA4aF/sJDBHvWgtVSso33eRvngHf.jpg')
     meta(property='og:image:alt', content='زجاجة عطر Légende Noire فاخرة')
     meta(name='twitter:card', content='summary_large_image')
     meta(name='twitter:title', content='Légende Noire | The scent that stays')
     meta(name='twitter:description', content='A refined oriental fragrance of amber, aged oud and black musk. 40% off with cash on delivery.')
-    meta(name='twitter:image', content='https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1200&q=88')
+    meta(name='twitter:image', content='https://files.manuscdn.com/search-media/310519663682894950/agJbzxkmjzwhnHB6RpA4aF/sJDBHvWgtVSso33eRvngHf.jpg')
     script(type='application/ld+json').
-      {"@context":"https://schema.org","@type":"Product","name":"Légende Noire","description":"عطر فاخر بتركيبة شرقية من العنبر والعود والمسك الأسود.","image":["https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1200&q=88"],"brand":{"@type":"Brand","name":"Légende Noire"},"offers":{"@type":"Offer","priceCurrency":"SAR","price":"179","availability":"https://schema.org/InStock"}}
+      {"@context":"https://schema.org","@type":"Product","name":"Légende Noire","description":"عطر فاخر بتركيبة شرقية من العنبر والعود والمسك الأسود.","image":["https://files.manuscdn.com/search-media/310519663682894950/agJbzxkmjzwhnHB6RpA4aF/sJDBHvWgtVSso33eRvngHf.jpg"],"brand":{"@type":"Brand","name":"Légende Noire"},"offers":{"@type":"Offer","priceCurrency":"SAR","price":"179","availability":"https://schema.org/InStock"}}
     title Légende Noire | العطر الذي يترك أثراً
     link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
     link(rel='preconnect', href='https://fonts.googleapis.com')
     link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='anonymous')
     link(href='https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap', rel='stylesheet')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css')
     link(rel='stylesheet', href='https://unpkg.com/aos@2.3.1/dist/aos.css')
     link(rel='stylesheet', href='css/styles.css')
   body#page-top
@@ -41,10 +42,9 @@ html(lang='ar', dir='rtl', data-lang='ar')
         a.navbar-brand(href='#page-top', aria-label='Légende Noire')
           span.brand-mark LN
           span.brand-name Légende Noire
+        button#language-toggle.language-toggle.order-lg-2(type='button', aria-label='تغيير اللغة') EN
         button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='فتح القائمة')
-          span.lang-ar القائمة
-          span.lang-en Menu
-          i.fas.fa-bars.ms-1
+          i.fa-solid.fa-bars.ms-1
         #navbarResponsive.collapse.navbar-collapse
           ul.navbar-nav.text-uppercase.ms-auto.py-4.py-lg-0.align-items-lg-center
             li.nav-item
@@ -63,14 +63,12 @@ html(lang='ar', dir='rtl', data-lang='ar')
               a.nav-link(href='#reviews')
                 span.lang-ar آراء العملاء
                 span.lang-en Reviews
-            li.nav-item.ms-lg-3
-              button#language-toggle.language-toggle(type='button') EN
     header.masthead
       .container
         .row.align-items-center.g-5
           .col-lg-6.order-lg-2(data-aos='fade-left')
             .hero-product
-              img(src='https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1200&q=88', alt='زجاجة عطر Légende Noire فاخرة / Luxury Légende Noire perfume bottle')
+              img(src='assets/img/perfume/hero-bottle.jpg', alt='زجاجة عطر Légende Noire داكنة وفاخرة / Dark luxury Légende Noire perfume bottle')
               span.hero-badge LÉGENDE<br />NOIRE
           .col-lg-6.order-lg-1(data-aos='fade-right')
             p.masthead-subheading
@@ -167,7 +165,9 @@ html(lang='ar', dir='rtl', data-lang='ar')
             article.note-card
               .note-photo
                 img(src='https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=85', alt='برغموت إيطالي وخزامى / Italian bergamot and lavender', loading='lazy')
-              span.note-number 01 / TOP
+                span.note-number
+                  span.lang-ar 01 / القمة
+                  span.lang-en 01 / TOP
               h4
                 span.lang-ar بداية آسرة
                 span.lang-en A captivating opening
@@ -177,8 +177,10 @@ html(lang='ar', dir='rtl', data-lang='ar')
           .col-lg-4.col-md-6(data-aos='fade-up', data-aos-delay='160')
             article.note-card
               .note-photo
-                img(src='https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=900&q=85', alt='عنبر ملكي وخشب الصندل / Royal amber and sandalwood', loading='lazy')
-              span.note-number 02 / HEART
+                img(src='assets/img/perfume/amber-sandalwood.jpg', alt='عنبر ملكي وخشب الصندل / Royal amber and sandalwood', loading='lazy')
+              span.note-number
+                span.lang-ar 02 / القلب
+                span.lang-en 02 / HEART
               h4
                 span.lang-ar دفء ملكي
                 span.lang-en A regal warmth
@@ -188,8 +190,10 @@ html(lang='ar', dir='rtl', data-lang='ar')
           .col-lg-4.col-md-6(data-aos='fade-up', data-aos-delay='240')
             article.note-card
               .note-photo
-                img(src='https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=900&q=85', alt='عود معتق ومسك أسود / Aged oud and black musk', loading='lazy')
-              span.note-number 03 / BASE
+                img(src='assets/img/perfume/aged-oud.jpg', alt='عود معتق وبخور فاخر / Aged oud and luxury incense', loading='lazy')
+              span.note-number
+                span.lang-ar 03 / القاعدة
+                span.lang-en 03 / BASE
               h4
                 span.lang-ar أثر لا يزول
                 span.lang-en An enduring trail
@@ -201,7 +205,7 @@ html(lang='ar', dir='rtl', data-lang='ar')
         .row.align-items-center.g-5
           .col-lg-6(data-aos='fade-right')
             .about-photo
-              img(src='https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=1100&q=88', alt='دخان بخور عود فاخر / Luxurious oud incense smoke', loading='lazy')
+              img(src='assets/img/perfume/oud-smoke.jpg', alt='دخان بخور عود فاخر / Luxurious oud incense smoke', loading='lazy')
           .col-lg-6(data-aos='fade-left')
             p.section-kicker
               span.lang-ar فلسفة Légende Noire
@@ -244,7 +248,7 @@ html(lang='ar', dir='rtl', data-lang='ar')
           .col-lg-4(data-aos='fade-up', data-aos-delay='80')
             article.review-card
               .stars ★★★★★
-              p.lang-ar “رائحة فخمة وهادئة، وكل من حولي سألني عنها. أصبحت توقيعي اليومي.”
+              p.lang-ar «رائحة فخمة وهادئة، وكل من حولي سألني عنها. أصبحت توقيعي اليومي.»
               p.lang-en “Refined and quietly luxurious. Everyone asked about it — it is my everyday signature now.”
               strong
                 span.lang-ar نورة — طلب موثق
@@ -252,7 +256,7 @@ html(lang='ar', dir='rtl', data-lang='ar')
           .col-lg-4(data-aos='fade-up', data-aos-delay='160')
             article.review-card
               .stars ★★★★★
-              p.lang-ar “فكرة العينة ممتازة. جربتها أولاً، وبعدها فتحت العبوة وأنا مطمئن.”
+              p.lang-ar «فكرة العينة ممتازة. جربتها أولاً، وبعدها فتحت العبوة وأنا مطمئن.»
               p.lang-en “The sample is such a thoughtful touch. I tried it first, then opened the bottle with confidence.”
               strong
                 span.lang-ar سلمان — طلب موثق
@@ -260,7 +264,7 @@ html(lang='ar', dir='rtl', data-lang='ar')
           .col-lg-4(data-aos='fade-up', data-aos-delay='240')
             article.review-card
               .stars ★★★★★
-              p.lang-ar “التغليف أنيق والعطر ثابت فعلاً. هدية فاخرة لنفسي ولمن أحب.”
+              p.lang-ar «التغليف أنيق والعطر ثابت فعلاً. هدية فاخرة لنفسي ولمن أحب.»
               p.lang-en “Elegant packaging and genuinely lasting. A beautiful gift — for myself and someone I love.”
               strong
                 span.lang-ar ريم — طلب موثق
@@ -286,9 +290,9 @@ html(lang='ar', dir='rtl', data-lang='ar')
                 span#stock-label 7 / 30
               .progress.mt-2
                 .progress-bar#stock-bar(role='progressbar', style='width:23%', aria-valuenow='23', aria-valuemin='0', aria-valuemax='100')
-              small
-                span.lang-ar متبقي 7 قطع فقط بالسعر المخفض.
-                span.lang-en Only 7 bottles left at the discounted price.
+                small
+                  span.lang-ar المتبقي 7 قطع فقط من أصل 30.
+                  span.lang-en Only 7 of 30 bottles remain at the discounted price.
         form#order-form.order-form(data-aos='fade-left')
           h3
             span.lang-ar تفاصيل الطلب
@@ -298,7 +302,7 @@ html(lang='ar', dir='rtl', data-lang='ar')
               label
                 span.lang-ar الاسم الكامل
                 span.lang-en Full name
-                input.form-control(type='text', name='name', required, placeholder='اكتب اسمك / Your name')
+                input.form-control(type='text', name='name', required, placeholder='اكتب اسمك بالكامل', data-placeholder-ar='اكتب اسمك بالكامل', data-placeholder-en='Enter your full name')
             .col-md-6
               label
                 span.lang-ar رقم الهاتف
@@ -308,27 +312,27 @@ html(lang='ar', dir='rtl', data-lang='ar')
               label
                 span.lang-ar العنوان بالتفصيل
                 span.lang-en Full address
-                input.form-control(type='text', name='address', required, placeholder='الحي، الشارع، المبنى / District, street, building')
+                input.form-control(type='text', name='address', required, placeholder='الحي، الشارع، رقم المبنى', data-placeholder-ar='الحي، الشارع، رقم المبنى', data-placeholder-en='District, street, building')
             .col-md-6
               label
                 span.lang-ar المدينة / المحافظة
                 span.lang-en City
                 select.form-select(name='city', required)
-                  option(value='') اختر المدينة / Select city
-                  option المنصورة / Mansoura
-                  option القاهرة / Cairo
-                  option الإسكندرية / Alexandria
-                  option الرياض / Riyadh
-                  option جدة / Jeddah
-                  option أخرى / Other
+                  option(value='', data-ar='اختر المدينة أو المحافظة', data-en='Select city or region') اختر المدينة أو المحافظة
+                  option(value='المنصورة', data-ar='المنصورة', data-en='Mansoura') المنصورة
+                  option(value='القاهرة', data-ar='القاهرة', data-en='Cairo') القاهرة
+                  option(value='الإسكندرية', data-ar='الإسكندرية', data-en='Alexandria') الإسكندرية
+                  option(value='الرياض', data-ar='الرياض', data-en='Riyadh') الرياض
+                  option(value='جدة', data-ar='جدة', data-en='Jeddah') جدة
+                  option(value='أخرى', data-ar='أخرى', data-en='Other') أخرى
             .col-md-6
               label
                 span.lang-ar الباقة
                 span.lang-en Bundle
                 select.form-select(name='package', required)
-                  option(value='') اختر الباقة / Select bundle
-                  option عبوة واحدة — 179 ر.س / One bottle — 179 SAR
-                  option عبوتان — 299 ر.س / Two bottles — 299 SAR
+                  option(value='', data-ar='اختر الباقة', data-en='Select bundle') اختر الباقة
+                  option(value='عبوة واحدة — 179 ر.س', data-ar='عبوة واحدة — 179 ر.س', data-en='One bottle — 179 SAR') عبوة واحدة — 179 ر.س
+                  option(value='عبوتان — 299 ر.س', data-ar='عبوتان — 299 ر.س', data-en='Two bottles — 299 SAR') عبوتان — 299 ر.س
             .col-12
               button.btn.btn-primary.btn-xl.w-100(type='submit')
                 span.lang-ar تأكيد الطلب عبر واتساب
@@ -356,7 +360,6 @@ html(lang='ar', dir='rtl', data-lang='ar')
         span.lang-en just ordered two bottles
         small#sale-city من المنصورة / Mansoura
     a.floating-wa(href='https://wa.me/201000000000', target='_blank', rel='noreferrer', aria-label='WhatsApp')
-      i.fab.fa-whatsapp
-      small WhatsApp
+      i.fa-brands.fa-whatsapp
     script(src='https://unpkg.com/aos@2.3.1/dist/aos.js')
     script(src='js/scripts.js')

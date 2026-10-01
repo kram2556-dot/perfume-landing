@@ -11,6 +11,12 @@ window.addEventListener('DOMContentLoaded', () => {
     root.dir = language === 'ar' ? 'rtl' : 'ltr';
     languageToggle.textContent = language === 'ar' ? 'EN' : 'عربي';
     document.title = language === 'ar' ? 'Légende Noire | العطر الذي يترك أثراً' : 'Légende Noire | The scent that stays';
+    document.querySelectorAll('[data-placeholder-ar]').forEach((field) => {
+      field.placeholder = language === 'ar' ? field.dataset.placeholderAr : field.dataset.placeholderEn;
+    });
+    document.querySelectorAll('option[data-ar]').forEach((option) => {
+      option.textContent = language === 'ar' ? option.dataset.ar : option.dataset.en;
+    });
     localStorage.setItem('legende-language', language);
   };
   setLanguage(localStorage.getItem('legende-language') === 'en' ? 'en' : 'ar');
@@ -34,7 +40,7 @@ window.addEventListener('DOMContentLoaded', () => {
   let saleIndex = 0;
   const showSale = () => {
     document.querySelector('#sale-name').textContent = saleNames[saleIndex];
-    document.querySelector('#sale-city').textContent = `من ${saleCities[saleIndex]} / ${saleCities[saleIndex]}`;
+    document.querySelector('#sale-city').textContent = root.dataset.lang === 'ar' ? `من ${saleCities[saleIndex]}` : `From ${saleCities[saleIndex]}`;
     sale.classList.add('is-visible');
     window.setTimeout(() => sale.classList.remove('is-visible'), 4800);
     saleIndex = (saleIndex + 1) % saleNames.length;
