@@ -1,610 +1,502 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl" data-lang="ar">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Agency - Start Bootstrap Theme</title>
-        <!-- Favicon-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="عطر أسطورة الملكي — حضور لا يُنسى بتركيبة من العود المعتق والعنبر والمسك الأسود. خصم 40%، شحن مجاني، والدفع عند الاستلام." />
+        <meta name="theme-color" content="#0f0f11" />
+        <meta property="og:title" content="عطر أسطورة | The Signature That Stays" />
+        <meta property="og:description" content="عطر ملكي فاخر بخصم 40% لفترة محدودة مع شحن مجاني والدفع عند الاستلام." />
+        <meta property="og:image" content="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&amp;fit=crop&amp;w=1400&amp;q=90" />
+        <title>عطر أسطورة | سر الحضور الذي لا يُنسى</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&amp;family=Cairo:wght@400;500;600;700;800&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+        <link rel="stylesheet" href="css/styles.css" />
     </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars ms-1"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container">
-                <div class="masthead-subheading">Welcome To Our Studio!</div>
-                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+    <body id="top">
+        <div class="topbar">
+            <span class="lang-ar">الشحن مجاني داخل المملكة</span>
+            <span class="lang-en">Free delivery nationwide</span>
+            <span class="lang-ar">الدفع عند الاستلام متاح</span>
+            <span class="lang-en">Cash on delivery available</span>
+            <span class="lang-ar">عينة مجانية 5 مل مع كل طلب</span>
+            <span class="lang-en">Complimentary 5ml sample with every order</span>
+        </div>
+        <header class="site-header">
+            <a class="logo" href="#top" aria-label="As6oura">
+                <span class="logo-mark">أ</span>
+                <span class="lang-ar">أُسـطـورة</span>
+                <span class="lang-en">As6oura</span>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a class="lang-ar" href="#notes">النوتات</a>
+                <a class="lang-en" href="#notes">Fragrance Notes</a>
+                <a class="lang-ar" href="#story">القصة</a>
+                <a class="lang-en" href="#story">The Story</a>
+                <a class="lang-ar" href="#reviews">آراء العملاء</a>
+                <a class="lang-en" href="#reviews">Reviews</a>
+                <a class="lang-ar" href="#order">اطلب الآن</a>
+                <a class="lang-en" href="#order">Order now</a>
+            </nav>
+            <div class="header-actions">
+                <button class="lang-toggle" id="language-toggle" type="button" aria-label="Switch language">EN</button>
+                <a class="header-cta" href="#order">
+                    <span class="lang-ar">اطلب الآن</span>
+                    <span class="lang-en">Shop now</span>
+                    <span>←</span>
+                </a>
             </div>
         </header>
-        <!-- Services-->
-        <section class="page-section" id="services">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+        <main>
+            <section class="hero section-shell">
+                <div class="hero-copy" data-aos="fade-up">
+                    <p class="eyebrow">
+                        <span class="lang-ar">دار أسطورة للعطور الملكية</span>
+                        <span class="lang-en">AS6OURA ROYAL PERFUMERY</span>
+                    </p>
+                    <h1>
+                        <span class="lang-ar">سر الحضور</span>
+                        <span class="lang-en">The signature</span>
+                        <br />
+                        <em>
+                            <span class="lang-ar">الذي لا يُنسى</span>
+                            <span class="lang-en">that stays</span>
+                        </em>
+                    </h1>
+                    <p class="hero-text">
+                        <span class="lang-ar">عطر أسطورة — توقيع شرقي فاخر يجمع دفء العنبر، عمق العود المعتّق ونظافة المسك الأسود في زجاجة تستحق أن تُرى.</span>
+                        <span class="lang-en">As6oura is a refined oriental signature where warm amber, aged oud and black musk meet in a bottle made to be remembered.</span>
+                    </p>
+                    <div class="offer">
+                        <strong>-40%</strong>
+                        <span class="lang-ar">لفترة محدودة</span>
+                        <span class="lang-en">Limited-time offer</span>
+                        <i></i>
+                        <span class="lang-ar">+ شحن مجاني</span>
+                        <span class="lang-en">+ Free delivery</span>
+                    </div>
+                    <div class="hero-actions">
+                        <a class="button button-gold pulse-glow" href="#order">
+                            <span class="lang-ar">اطلب الآن والدفع عند الاستلام</span>
+                            <span class="lang-en">Order now — cash on delivery</span>
+                            <span>←</span>
+                        </a>
+                        <a class="text-link" href="#notes">
+                            <span class="lang-ar">اكتشف الرائحة ↓</span>
+                            <span class="lang-en">Discover the scent ↓</span>
+                        </a>
+                    </div>
+                    <div class="trust-row">
+                        <span>
+                            <b>48</b>
+                            <span class="lang-ar">ساعة ثبات</span>
+                            <span class="lang-en">hours of longevity</span>
                         </span>
-                        <h4 class="my-3">E-Commerce</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        <span>
+                            <b>5ml</b>
+                            <span class="lang-ar">عينة مجانية</span>
+                            <span class="lang-en">complimentary sample</span>
                         </span>
-                        <h4 class="my-3">Responsive Design</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                        <span>
+                            <b>100%</b>
+                            <span class="lang-ar">ضمان ذهبي</span>
+                            <span class="lang-en">golden guarantee</span>
                         </span>
-                        <h4 class="my-3">Web Security</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
+                </div>
+                <div class="hero-visual" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="gold-orbit"></div>
+                    <div class="hero-image-frame"><img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&amp;fit=crop&amp;w=1400&amp;q=90" alt="زجاجات عطور فاخرة بإضاءة ذهبية / Luxury perfume bottles in warm golden light" fetchpriority="high" /></div>
+                    <div class="hero-seal">
+                        EXTRACT
+                        <b>DE PARFUM</b>
+                        <small>ROYAL BLEND</small>
+                    </div>
+                    <p class="vertical-label">THE SIGNATURE / 01</p>
+                </div>
+            </section>
+            <div class="marquee" aria-label="Product benefits">
+                <div>
+                    <span class="lang-ar">عود معتّق</span>
+                    <span class="lang-en">Aged Oud</span>
+                    <b>✦</b>
+                    <span class="lang-ar">عنبر ملكي</span>
+                    <span class="lang-en">Royal Amber</span>
+                    <b>✦</b>
+                    <span class="lang-ar">مسك أسود</span>
+                    <span class="lang-en">Black Musk</span>
+                    <b>✦</b>
+                    <span class="lang-ar">حضور استثنائي</span>
+                    <span class="lang-en">Unforgettable presence</span>
+                    <b>✦</b>
+                    <span class="lang-ar">عود معتّق</span>
+                    <span class="lang-en">Aged Oud</span>
                 </div>
             </div>
-        </section>
-        <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <section class="notes section-shell" id="notes">
+                <div class="section-intro" data-aos="fade-up">
+                    <p class="eyebrow">
+                        <span class="lang-ar">رحلة الرائحة</span>
+                        <span class="lang-en">THE SCENT JOURNEY</span>
+                    </p>
+                    <h2>
+                        <span class="lang-ar">ثلاث طبقات،</span>
+                        <span class="lang-en">Three layers,</span>
+                        <br />
+                        <em>
+                            <span class="lang-ar">شخصية واحدة.</span>
+                            <span class="lang-en">one signature.</span>
+                        </em>
+                    </h2>
+                    <p>
+                        <span class="lang-ar">تتفتح أسطورة بهدوء، ثم تكشف عن عمقها تدريجياً. تركيبة صُممت لتبقى في الذاكرة قبل أن تبقى على الجلد.</span>
+                        <span class="lang-en">As6oura unfolds with restraint, revealing its depth layer by layer — composed to linger in memory before it lingers on skin.</span>
+                    </p>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Threads</div>
-                                <div class="portfolio-caption-subheading text-muted">Illustration</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Explore</div>
-                                <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Finish</div>
-                                <div class="portfolio-caption-subheading text-muted">Identity</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Lines</div>
-                                <div class="portfolio-caption-subheading text-muted">Branding</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Southwest</div>
-                                <div class="portfolio-caption-subheading text-muted">Website Design</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <!-- Portfolio item 6-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Window</div>
-                                <div class="portfolio-caption-subheading text-muted">Photography</div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="notes-grid">
+                    <article class="note-card" data-aos="fade-up" data-aos-delay="80">
+                        <span class="note-number">
+                            01 /
+                            <span class="lang-ar">القمة</span>
+                            <span class="lang-en">TOP NOTES</span>
+                        </span>
+                        <div class="note-image"><img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="برغموت ومكونات عطرية طبيعية / Bergamot and natural fragrance ingredients" loading="lazy" /></div>
+                        <h3>
+                            <span class="lang-ar">بداية آسرة</span>
+                            <span class="lang-en">A captivating opening</span>
+                        </h3>
+                        <p>
+                            <span class="lang-ar">برغموت إيطالي منعش ولمسة خزامى تفتح الباب بحضور مشرق وأنيق.</span>
+                            <span class="lang-en">Bright Italian bergamot and a soft touch of lavender open with effortless elegance.</span>
+                        </p>
+                        <span class="note-arrow">↗</span>
+                    </article>
+                    <article class="note-card featured" data-aos="fade-up" data-aos-delay="160">
+                        <span class="note-number">
+                            02 /
+                            <span class="lang-ar">القلب</span>
+                            <span class="lang-en">HEART NOTES</span>
+                        </span>
+                        <div class="note-image"><img src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="عنبر ملكي وخشب فاخر / Royal amber and precious wood" loading="lazy" /></div>
+                        <h3>
+                            <span class="lang-ar">دفء ملكي</span>
+                            <span class="lang-en">A regal warmth</span>
+                        </h3>
+                        <p>
+                            <span class="lang-ar">عنبر ذهبي يلتقي بخشب الصندل الكريمي ليمنح الرائحة عمقاً ناعماً.</span>
+                            <span class="lang-en">Golden amber meets creamy sandalwood for a smooth, magnetic heart.</span>
+                        </p>
+                        <span class="note-arrow">↗</span>
+                    </article>
+                    <article class="note-card" data-aos="fade-up" data-aos-delay="240">
+                        <span class="note-number">
+                            03 /
+                            <span class="lang-ar">القاعدة</span>
+                            <span class="lang-en">BASE NOTES</span>
+                        </span>
+                        <div class="note-image"><img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="دخان عود ومسك أسود / Oud smoke and black musk" loading="lazy" /></div>
+                        <h3>
+                            <span class="lang-ar">أثر لا يزول</span>
+                            <span class="lang-en">An enduring trail</span>
+                        </h3>
+                        <p>
+                            <span class="lang-ar">خشب العود المعتّق والمسك الأسود يتركان توقيعاً عميقاً يرافقك حتى النهاية.</span>
+                            <span class="lang-en">Aged oud and black musk leave a deep, elegant trail that stays with you.</span>
+                        </p>
+                        <span class="note-arrow">↗</span>
+                    </article>
                 </div>
-            </div>
-        </section>
-        <!-- About-->
-        <section class="page-section" id="about">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>2009-2011</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+            </section>
+            <section class="story section-shell" id="story">
+                <div class="story-image" data-aos="fade-left"><img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&amp;fit=crop&amp;w=1200&amp;q=88" alt="دخان بخور عود فاخر / Luxurious oud incense smoke" loading="lazy" /></div>
+                <div class="story-copy" data-aos="fade-right">
+                    <p class="eyebrow">
+                        <span class="lang-ar">لماذا أسطورة؟</span>
+                        <span class="lang-en">WHY AS6OURA?</span>
+                    </p>
+                    <h2>
+                        <span class="lang-ar">ليس عطراً فقط.</span>
+                        <span class="lang-en">More than a fragrance.</span>
+                        <br />
+                        <em>
+                            <span class="lang-ar">إنه حضور.</span>
+                            <span class="lang-en">It is presence.</span>
+                        </em>
+                    </h2>
+                    <p>
+                        <span class="lang-ar">اخترنا أجود الخامات من الشرق والغرب، وتركنا لها الوقت لتتوازن. النتيجة عطر يسبقك إلى المكان، ويترك انطباعاً لا يحتاج إلى شرح.</span>
+                        <span class="lang-en">We selected exceptional materials from East and West, then gave them time to find their balance. The result arrives before you and leaves an impression without explanation.</span>
+                    </p>
+                    <div class="feature-list" id="features">
+                        <div class="feature">
+                            <span>✦</span>
+                            <p>
+                                <b>
+                                    <span class="lang-ar">ثبات يدوم حتى 48 ساعة</span>
+                                    <span class="lang-en">Up to 48 hours of longevity</span>
+                                </b>
+                                <small>
+                                    <span class="lang-ar">تركيز عالٍ من خلاصة العطر</span>
+                                    <span class="lang-en">A high concentration of parfum extract</span>
+                                </small>
+                            </p>
                         </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>March 2011</h4>
-                                <h4 class="subheading">An Agency is Born</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                        <div class="feature">
+                            <span>✦</span>
+                            <p>
+                                <b>
+                                    <span class="lang-ar">فوحان قوي ومتوازن</span>
+                                    <span class="lang-en">A powerful, balanced sillage</span>
+                                </b>
+                                <small>
+                                    <span class="lang-ar">حضور ملحوظ دون مبالغة</span>
+                                    <span class="lang-en">Noticeable, never overwhelming</span>
+                                </small>
+                            </p>
                         </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>December 2015</h4>
-                                <h4 class="subheading">Transition to Full Service</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>July 2020</h4>
-                                <h4 class="subheading">Phase Two Expansion</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>
-                                Be Part
-                                <br />
-                                Of Our
-                                <br />
-                                Story!
-                            </h4>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- Team-->
-        <section class="page-section bg-light" id="team">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                            <h4>Parveen Anand</h4>
-                            <p class="text-muted">Lead Designer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
-                            <h4>Diana Petersen</h4>
-                            <p class="text-muted">Lead Marketer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                            <h4>Larry Parker</h4>
-                            <p class="text-muted">Lead Developer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        <div class="feature">
+                            <span>✦</span>
+                            <p>
+                                <b>
+                                    <span class="lang-ar">عبوة كريستالية فاخرة</span>
+                                    <span class="lang-en">A crystal-worthy bottle</span>
+                                </b>
+                                <small>
+                                    <span class="lang-ar">تفاصيل ذهبية صُممت لتُهدى</span>
+                                    <span class="lang-en">Golden details made for gifting</span>
+                                </small>
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+            </section>
+            <section class="guarantee section-shell" data-aos="fade-up">
+                <div class="guarantee-badge">
+                    ★
+                    <small>
+                        <span class="lang-ar">ضمان</span>
+                        <span class="lang-en">GOLDEN</span>
+                        <br />
+                        <span class="lang-ar">ذهبي</span>
+                        <span class="lang-en">GUARANTEE</span>
+                    </small>
                 </div>
-            </div>
-        </section>
-        <!-- Clients-->
-        <div class="py-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
+                <div>
+                    <p class="eyebrow">
+                        <span class="lang-ar">جرّب قبل أن تفتح</span>
+                        <span class="lang-en">TRY BEFORE YOU OPEN</span>
+                    </p>
+                    <h2>
+                        <span class="lang-ar">رائحتك تستحق</span>
+                        <span class="lang-en">Your scent deserves</span>
+                        <br />
+                        <em>
+                            <span class="lang-ar">تجربة بلا مخاطرة.</span>
+                            <span class="lang-en">a risk-free first impression.</span>
+                        </em>
+                    </h2>
+                </div>
+                <p>
+                    <span class="lang-ar">ستصلك عينة مجانية 5 مل مع الشحنة. جرّبها أولاً، وإذا لم تكن أسطورة هي رائحتك، نضمن لك حق الاسترجاع الفوري قبل فتح العبوة الرئيسية.</span>
+                    <span class="lang-en">A complimentary 5ml sample arrives with your order. Try it first, and if As6oura is not your scent, return the unopened bottle immediately.</span>
+                </p>
+            </section>
+            <section class="reviews section-shell" id="reviews">
+                <div class="section-intro centered" data-aos="fade-up">
+                    <p class="eyebrow">
+                        <span class="lang-ar">تجارب حقيقية</span>
+                        <span class="lang-en">REAL EXPERIENCES</span>
+                    </p>
+                    <h2>
+                        <span class="lang-ar">حين يتكلم</span>
+                        <span class="lang-en">When the trail</span>
+                        <br />
+                        <em>
+                            <span class="lang-ar">الأثر.</span>
+                            <span class="lang-en">speaks.</span>
+                        </em>
+                    </h2>
+                    <div class="rating">
+                        <strong>4.9</strong>
+                        <span>★★★★★</span>
+                        <small>
+                            <span class="lang-ar">من أكثر من 2,400 طلب موثق</span>
+                            <span class="lang-en">from 2,400+ verified orders</span>
+                        </small>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Contact-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <div class="review-grid">
+                    <article data-aos="fade-up">
+                        <div class="stars">★★★★★</div>
+                        <p class="lang-ar">“من أول رشة عرفت أنه سيكون عطري المميز. فخم، هادئ، وكل من حولي يسألني عنه.”</p>
+                        <p class="lang-en">“From the first spray, I knew it would become my signature. Refined, quiet, and impossible not to ask about.”</p>
+                        <b>
+                            <span class="lang-ar">نورة العتيبي</span>
+                            <span class="lang-en">Noura Alotaibi</span>
+                            <small>✓</small>
+                        </b>
+                    </article>
+                    <article data-aos="fade-up" data-aos-delay="100">
+                        <div class="stars">★★★★★</div>
+                        <p class="lang-ar">“وصلت العينة مع الطلب وكانت فكرة رائعة. العطر ثابت فعلاً ورائحته تتغير بشكل جميل طوال اليوم.”</p>
+                        <p class="lang-en">“The sample made the purchase feel effortless. It truly lasts, and the scent evolves beautifully through the day.”</p>
+                        <b>
+                            <span class="lang-ar">سلمان الحربي</span>
+                            <span class="lang-en">Salman Alharbi</span>
+                            <small>✓</small>
+                        </b>
+                    </article>
+                    <article data-aos="fade-up" data-aos-delay="200">
+                        <div class="stars">★★★★★</div>
+                        <p class="lang-ar">“العبوة أجمل من الصور والتغليف ملكي جداً. أخذته هدية، وانتهى بي الأمر بطلب واحد لي.”</p>
+                        <p class="lang-en">“The bottle is even more beautiful in person. I bought it as a gift, then ordered one for myself.”</p>
+                        <b>
+                            <span class="lang-ar">ريم محمد</span>
+                            <span class="lang-en">Reem Mohammed</span>
+                            <small>✓</small>
+                        </b>
+                    </article>
                 </div>
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <!-- Name input-->
-                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <div class="form-group">
-                                <!-- Email address input-->
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <div class="form-group mb-md-0">
-                                <!-- Phone number input-->
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                        </div>
+            </section>
+            <section class="order section-shell" id="order">
+                <div class="order-heading" data-aos="fade-up">
+                    <p class="eyebrow">
+                        <span class="lang-ar">الكمية محدودة</span>
+                        <span class="lang-en">LIMITED BATCH</span>
+                    </p>
+                    <h2>
+                        <span class="lang-ar">اجعل أسطورة</span>
+                        <span class="lang-en">Make As6oura</span>
+                        <br />
+                        <em>
+                            <span class="lang-ar">توقيعك اليوم.</span>
+                            <span class="lang-en">your signature today.</span>
+                        </em>
+                    </h2>
+                    <p>
+                        <span class="lang-ar">املأ البيانات وسنتواصل معك لتأكيد الطلب. الدفع عند الاستلام — بلا بطاقات ولا تعقيد.</span>
+                        <span class="lang-en">Leave your details and we will confirm your order. Cash on delivery — no cards, no friction.</span>
+                    </p>
+                    <div class="order-price">
+                        <del>299 SAR</del>
+                        <strong>
+                            179
+                            <small>SAR</small>
+                        </strong>
+                        <span>
+                            <span class="lang-ar">عبوة 100 مل</span>
+                            <span class="lang-en">100 ml bottle</span>
+                        </span>
                     </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            To activate this form, sign up at
-                            <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                        </div>
+                </div>
+                <form class="order-form" id="order-form" data-aos="fade-up" data-aos-delay="120">
+                    <h3>
+                        <span class="lang-ar">تفاصيل الشحنة</span>
+                        <span class="lang-en">Delivery details</span>
+                    </h3>
+                    <div class="form-grid">
+                        <label>
+                            <span class="lang-ar">الاسم الكامل</span>
+                            <span class="lang-en">Full name</span>
+                            <input type="text" name="name" required placeholder="اكتب اسمك هنا / Your name" />
+                        </label>
+                        <label>
+                            <span class="lang-ar">رقم الهاتف</span>
+                            <span class="lang-en">Phone number</span>
+                            <input type="tel" name="phone" required pattern="[0-9+() -]{8,}" placeholder="05xxxxxxxx" />
+                        </label>
                     </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                    <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
+                    <label>
+                        <span class="lang-ar">العنوان بالتفصيل</span>
+                        <span class="lang-en">Full address</span>
+                        <input type="text" name="address" required placeholder="الحي، الشارع، رقم المبنى / District, street, building" />
+                    </label>
+                    <label>
+                        <span class="lang-ar">المحافظة / المدينة</span>
+                        <span class="lang-en">City</span>
+                        <select name="city" required>
+                            <option value="">اختر مدينتك / Select your city</option>
+                            <option>الرياض / Riyadh</option>
+                            <option>جدة / Jeddah</option>
+                            <option>الدمام / Dammam</option>
+                            <option>مكة المكرمة / Makkah</option>
+                            <option>المدينة المنورة / Madinah</option>
+                            <option>أخرى / Other</option>
+                        </select>
+                    </label>
+                    <fieldset>
+                        <legend>
+                            <span class="lang-ar">اختر باقتك</span>
+                            <span class="lang-en">Choose your bundle</span>
+                        </legend>
+                        <label class="package-option">
+                            <input type="radio" name="package" value="عبوة واحدة — 179 ر.س / One bottle — 179 SAR" checked />
+                            <span>
+                                <b>
+                                    <span class="lang-ar">عبوة واحدة</span>
+                                    <span class="lang-en">One bottle</span>
+                                </b>
+                                <small>
+                                    <span class="lang-ar">179 ر.س + شحن مجاني</span>
+                                    <span class="lang-en">179 SAR + free delivery</span>
+                                </small>
+                            </span>
+                            <strong>
+                                <span class="lang-ar">الأكثر طلباً</span>
+                                <span class="lang-en">Best seller</span>
+                            </strong>
+                        </label>
+                        <label class="package-option">
+                            <input type="radio" name="package" value="عبوتان — 299 ر.س / Two bottles — 299 SAR" />
+                            <span>
+                                <b>
+                                    <span class="lang-ar">عبوتان</span>
+                                    <span class="lang-en">Two bottles</span>
+                                </b>
+                                <small>
+                                    <span class="lang-ar">299 ر.س — وفر 59 ر.س</span>
+                                    <span class="lang-en">299 SAR — save 59 SAR</span>
+                                </small>
+                            </span>
+                            <strong>
+                                <span class="lang-ar">قيمة أفضل</span>
+                                <span class="lang-en">Better value</span>
+                            </strong>
+                        </label>
+                    </fieldset>
+                    <button class="button button-gold pulse-glow" type="submit">
+                        <span class="lang-ar">تأكيد الطلب عبر واتساب</span>
+                        <span class="lang-en">Confirm via WhatsApp</span>
+                        <span>←</span>
+                    </button>
+                    <small class="form-note">
+                        <span class="lang-ar">بالضغط على الزر ستفتح محادثة واتساب جاهزة بالتفاصيل. لا يتم حفظ بياناتك داخل الموقع.</span>
+                        <span class="lang-en">This opens a pre-filled WhatsApp message. Your data is not stored on this website.</span>
+                    </small>
+                    <p class="form-status" role="status"></p>
                 </form>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer py-4">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2023</div>
-                    <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <div class="col-lg-4 text-lg-end">
-                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-                    </div>
-                </div>
-            </div>
+            </section>
+        </main>
+        <footer>
+            <a class="logo" href="#top">
+                <span class="logo-mark">أ</span>
+                <span class="lang-ar">أُسـطـورة</span>
+                <span class="lang-en">As6oura</span>
+            </a>
+            <p>
+                <span class="lang-ar">رائحة تُروى. حضور يُذكر.</span>
+                <span class="lang-en">A scent worth telling. A presence worth remembering.</span>
+            </p>
+            <span>© 2026 As6oura Royal Perfumery</span>
         </footer>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio item 1 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Threads
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Illustration
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio item 2 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Explore
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Graphic Design
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio item 3 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Finish
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Identity
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio item 4 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Lines
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Branding
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio item 5 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Southwest
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Website Design
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio item 6 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Window
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Photography
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
+        <a class="floating-wa" href="https://wa.me/201000000000" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+            <span>◔</span>
+            <small>WhatsApp</small>
+        </a>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>

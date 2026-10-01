@@ -1,401 +1,378 @@
 doctype html
-html(lang='en')
-
-    head
-
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
-
-        title Agency - Start Bootstrap Theme
-
-        // Favicon
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
-
-        // Font Awesome icons (free version)
-        script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
-
-        // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
-        link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700', rel='stylesheet', type='text/css')
-
-        // Core theme CSS (includes Bootstrap)
-        link(href='css/styles.css', rel='stylesheet')
-
-    body#page-top
-
-        // Navigation
-        nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
-            .container
-                a.navbar-brand(href='#page-top')
-                    img(src='assets/img/navbar-logo.svg', alt='...')
-                button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
-                    | Menu
-                    i.fas.fa-bars.ms-1
-                #navbarResponsive.collapse.navbar-collapse
-                    ul.navbar-nav.text-uppercase.ms-auto.py-4.py-lg-0
-                        li.nav-item
-                            a.nav-link(href='#services') Services
-                        li.nav-item
-                            a.nav-link(href='#portfolio') Portfolio
-                        li.nav-item
-                            a.nav-link(href='#about') About
-                        li.nav-item
-                            a.nav-link(href='#team') Team
-                        li.nav-item
-                            a.nav-link(href='#contact') Contact
-        // Masthead
-        header.masthead
-            .container
-                .masthead-subheading Welcome To Our Studio!
-                .masthead-heading.text-uppercase It's Nice To Meet You
-                a.btn.btn-primary.btn-xl.text-uppercase(href='#services') Tell Me More
-
-        // Services
-        section#services.page-section
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Services
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-                .row.text-center
-                    .col-md-4
-                        span.fa-stack.fa-4x
-                            i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-shopping-cart.fa-stack-1x.fa-inverse
-                        h4.my-3 E-Commerce
-                        p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
-                    .col-md-4
-                        span.fa-stack.fa-4x
-                            i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-laptop.fa-stack-1x.fa-inverse
-                        h4.my-3 Responsive Design
-                        p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
-                    .col-md-4
-                        span.fa-stack.fa-4x
-                            i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-lock.fa-stack-1x.fa-inverse
-                        h4.my-3 Web Security
-                        p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
-
-        // Portfolio Grid
-        section#portfolio.page-section.bg-light
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Portfolio
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-                .row
-                    .col-lg-4.col-sm-6.mb-4
-                        // Portfolio item 1
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal1')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/1.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Threads
-                                .portfolio-caption-subheading.text-muted Illustration
-                    .col-lg-4.col-sm-6.mb-4
-                        // Portfolio item 2
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal2')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/2.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Explore
-                                .portfolio-caption-subheading.text-muted Graphic Design
-                    .col-lg-4.col-sm-6.mb-4
-                        // Portfolio item 3
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal3')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/3.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Finish
-                                .portfolio-caption-subheading.text-muted Identity
-                    .col-lg-4.col-sm-6.mb-4.mb-lg-0
-                        // Portfolio item 4
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal4')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/4.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Lines
-                                .portfolio-caption-subheading.text-muted Branding
-                    .col-lg-4.col-sm-6.mb-4.mb-sm-0
-                        // Portfolio item 5
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal5')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/5.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Southwest
-                                .portfolio-caption-subheading.text-muted Website Design
-                    .col-lg-4.col-sm-6
-                        // Portfolio item 6
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal6')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/6.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Window
-                                .portfolio-caption-subheading.text-muted Photography
-
-        // About
-        section#about.page-section
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase About
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-                ul.timeline
-                    li
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/1.jpg', alt='...')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 2009-2011
-                                h4.subheading Our Humble Beginnings
-                            .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                    li.timeline-inverted
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/2.jpg', alt='...')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 March 2011
-                                h4.subheading An Agency is Born
-                            .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                    li
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/3.jpg', alt='...')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 December 2015
-                                h4.subheading Transition to Full Service
-                            .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                    li.timeline-inverted
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/4.jpg', alt='...')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 July 2020
-                                h4.subheading Phase Two Expansion
-                            .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                    li.timeline-inverted
-                        .timeline-image
-                            h4
-                                | Be Part
-                                br
-                                | Of Our
-                                br
-                                | Story!
-
-        // Team
-        section#team.page-section.bg-light
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Our Amazing Team
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-                .row
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/1.jpg', alt='...')
-                            h4 Parveen Anand
-                            p.text-muted Lead Designer
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Parveen Anand Twitter Profile')
-                                i.fab.fa-twitter
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Parveen Anand Facebook Profile')
-                                i.fab.fa-facebook-f
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Parveen Anand LinkedIn Profile')
-                                i.fab.fa-linkedin-in
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/2.jpg', alt='...')
-                            h4 Diana Petersen
-                            p.text-muted Lead Marketer
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Diana Petersen Twitter Profile')
-                                i.fab.fa-twitter
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Diana Petersen Facebook Profile')
-                                i.fab.fa-facebook-f
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Diana Petersen LinkedIn Profile')
-                                i.fab.fa-linkedin-in
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/3.jpg', alt='...')
-                            h4 Larry Parker
-                            p.text-muted Lead Developer
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Larry Parker Twitter Profile')
-                                i.fab.fa-twitter
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Larry Parker Facebook Profile')
-                                i.fab.fa-facebook-f
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Larry Parker LinkedIn Profile')
-                                i.fab.fa-linkedin-in
-                .row
-                    .col-lg-8.mx-auto.text-center
-                        p.large.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
-
-        // Clients
-        div.py-5
-            .container
-                .row.align-items-center
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/microsoft.svg', alt='...', aria-label='Microsoft Logo')
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/google.svg', alt='...', aria-label='Google Logo')
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/facebook.svg', alt='...', aria-label='Facebook Logo')
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/ibm.svg', alt='...', aria-label='IBM Logo')
-
-        // Contact
-        section#contact.page-section
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Contact Us
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-
-                // * * * * * * * * * * * * * * *
-                // * * SB Forms Contact Form * *
-                // * * * * * * * * * * * * * * *
-
-                // This form is pre-integrated with SB Forms.
-                // To make this form functional, sign up at
-                // https://startbootstrap.com/solution/contact-forms
-                // to get an API token!
-
-                form#contactForm(data-sb-form-api-token='API_TOKEN')
-                    .row.align-items-stretch.mb-5
-                        .col-md-6
-                            .form-group
-
-                                // Name input
-                                input#name.form-control(
-                                    type='text',
-                                    placeholder='Your Name *',
-                                    data-sb-validations='required'
-                                )
-                                .invalid-feedback(data-sb-feedback='name:required')
-                                    | A name is required.
-
-                            .form-group
-
-                                // Email address input
-                                input#email.form-control(
-                                    type='email',
-                                    placeholder='Your Email *',
-                                    data-sb-validations='required,email'
-                                )
-                                .invalid-feedback(data-sb-feedback='email:required')
-                                    | An email is required.
-                                .invalid-feedback(data-sb-feedback='email:email')
-                                    | Email is not valid.
-
-                            .form-group.mb-md-0
-
-                                // Phone number input
-                                input#phone.form-control(
-                                    type='tel',
-                                    placeholder='Your Phone *',
-                                    data-sb-validations='required'
-                                )
-                                .invalid-feedback(data-sb-feedback='phone:required')
-                                    | A phone number is required.
-
-                        .col-md-6
-                            .form-group.form-group-textarea.mb-md-0
-
-                                // Message input
-                                textarea#message.form-control(
-                                    placeholder='Your Message *',
-                                    data-sb-validations='required'
-                                )
-                                .invalid-feedback(data-sb-feedback='message:required')
-                                    | A message is required.
-
-                    // Submit success message
-                    //
-                    // This is what your users will see when the form
-                    // has successfully submitted
-
-                    #submitSuccessMessage.d-none
-                        .text-center.text-white.mb-3
-                            .fw-bolder Form submission successful!
-                            | To activate this form, sign up at
-                            br
-                            a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
-
-                    // Submit error message
-                    //
-                    // This is what your users will see when there is
-                    // an error submitting the form
-
-                    #submitErrorMessage.d-none
-                        .text-center.text-danger.mb-3 Error sending message!
-
-                    // Submit Button
-                    .text-center
-                        button#submitButton.btn.btn-primary.btn-xl.text-uppercase.disabled(type='submit') Send Message
-
-        // Footer
-        footer.footer.py-4
-            .container
-                .row.align-items-center
-                    .col-lg-4.text-lg-start
-                        | Copyright &copy; Your Website 2023
-                    .col-lg-4.my-3.my-lg-0
-                        a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Twitter')
-                            i.fab.fa-twitter
-                        a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Facebook')
-                            i.fab.fa-facebook-f
-                        a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='LinkedIn')
-                            i.fab.fa-linkedin-in
-                    .col-lg-4.text-lg-end
-                        a.link-dark.text-decoration-none.me-3(href='#!') Privacy Policy
-                        a.link-dark.text-decoration-none(href='#!') Terms of Use
-
-        // Portfolio Modals
-        include includes/portfolio-modal-1
-        include includes/portfolio-modal-2
-        include includes/portfolio-modal-3
-        include includes/portfolio-modal-4
-        include includes/portfolio-modal-5
-        include includes/portfolio-modal-6
-
-        // Bootstrap core JS
-        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
-
-        // Core theme JS
-        script(src='js/scripts.js')
-
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-        // * *                               SB Forms JS                               * *
-        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
-        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
+html(lang='ar', dir='rtl', data-lang='ar')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='عطر أسطورة الملكي — حضور لا يُنسى بتركيبة من العود المعتق والعنبر والمسك الأسود. خصم 40%، شحن مجاني، والدفع عند الاستلام.')
+    meta(name='theme-color', content='#0f0f11')
+    meta(property='og:title', content='عطر أسطورة | The Signature That Stays')
+    meta(property='og:description', content='عطر ملكي فاخر بخصم 40% لفترة محدودة مع شحن مجاني والدفع عند الاستلام.')
+    meta(property='og:image', content='https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1400&q=90')
+    title عطر أسطورة | سر الحضور الذي لا يُنسى
+    link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='anonymous')
+    link(href='https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap', rel='stylesheet')
+    link(rel='stylesheet', href='https://unpkg.com/aos@2.3.1/dist/aos.css')
+    link(rel='stylesheet', href='css/styles.css')
+  body#top
+    .topbar
+      span.lang-ar الشحن مجاني داخل المملكة
+      span.lang-en Free delivery nationwide
+      span.lang-ar الدفع عند الاستلام متاح
+      span.lang-en Cash on delivery available
+      span.lang-ar عينة مجانية 5 مل مع كل طلب
+      span.lang-en Complimentary 5ml sample with every order
+    header.site-header
+      a.logo(href='#top', aria-label='As6oura')
+        span.logo-mark أ
+        span.lang-ar أُسـطـورة
+        span.lang-en As6oura
+      nav.main-nav(aria-label='Main navigation')
+        a(href='#notes').lang-ar النوتات
+        a(href='#notes').lang-en Fragrance Notes
+        a(href='#story').lang-ar القصة
+        a(href='#story').lang-en The Story
+        a(href='#reviews').lang-ar آراء العملاء
+        a(href='#reviews').lang-en Reviews
+        a(href='#order').lang-ar اطلب الآن
+        a(href='#order').lang-en Order now
+      .header-actions
+        button.lang-toggle#language-toggle(type='button', aria-label='Switch language') EN
+        a.header-cta(href='#order')
+          span.lang-ar اطلب الآن
+          span.lang-en Shop now
+          span ←
+    main
+      section.hero.section-shell
+        .hero-copy(data-aos='fade-up')
+          p.eyebrow
+            span.lang-ar دار أسطورة للعطور الملكية
+            span.lang-en AS6OURA ROYAL PERFUMERY
+          h1
+            span.lang-ar سر الحضور
+            span.lang-en The signature
+            br
+            em
+              span.lang-ar الذي لا يُنسى
+              span.lang-en that stays
+          p.hero-text
+            span.lang-ar عطر أسطورة — توقيع شرقي فاخر يجمع دفء العنبر، عمق العود المعتّق ونظافة المسك الأسود في زجاجة تستحق أن تُرى.
+            span.lang-en As6oura is a refined oriental signature where warm amber, aged oud and black musk meet in a bottle made to be remembered.
+          .offer
+            strong -40%
+            span.lang-ar لفترة محدودة
+            span.lang-en Limited-time offer
+            i
+            span.lang-ar + شحن مجاني
+            span.lang-en + Free delivery
+          .hero-actions
+            a.button.button-gold.pulse-glow(href='#order')
+              span.lang-ar اطلب الآن والدفع عند الاستلام
+              span.lang-en Order now — cash on delivery
+              span ←
+            a.text-link(href='#notes')
+              span.lang-ar اكتشف الرائحة ↓
+              span.lang-en Discover the scent ↓
+          .trust-row
+            span
+              b 48
+              span.lang-ar ساعة ثبات
+              span.lang-en hours of longevity
+            span
+              b 5ml
+              span.lang-ar عينة مجانية
+              span.lang-en complimentary sample
+            span
+              b 100%
+              span.lang-ar ضمان ذهبي
+              span.lang-en golden guarantee
+        .hero-visual(data-aos='zoom-in', data-aos-delay='150')
+          .gold-orbit
+          .hero-image-frame
+            img(src='https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1400&q=90', alt='زجاجات عطور فاخرة بإضاءة ذهبية / Luxury perfume bottles in warm golden light', fetchpriority='high')
+          .hero-seal EXTRACT
+            b DE PARFUM
+            small ROYAL BLEND
+          p.vertical-label THE SIGNATURE / 01
+      .marquee(aria-label='Product benefits')
+        div
+          span.lang-ar عود معتّق
+          span.lang-en Aged Oud
+          b ✦
+          span.lang-ar عنبر ملكي
+          span.lang-en Royal Amber
+          b ✦
+          span.lang-ar مسك أسود
+          span.lang-en Black Musk
+          b ✦
+          span.lang-ar حضور استثنائي
+          span.lang-en Unforgettable presence
+          b ✦
+          span.lang-ar عود معتّق
+          span.lang-en Aged Oud
+      section#notes.notes.section-shell
+        .section-intro(data-aos='fade-up')
+          p.eyebrow
+            span.lang-ar رحلة الرائحة
+            span.lang-en THE SCENT JOURNEY
+          h2
+            span.lang-ar ثلاث طبقات،
+            span.lang-en Three layers,
+            br
+            em
+              span.lang-ar شخصية واحدة.
+              span.lang-en one signature.
+          p
+            span.lang-ar تتفتح أسطورة بهدوء، ثم تكشف عن عمقها تدريجياً. تركيبة صُممت لتبقى في الذاكرة قبل أن تبقى على الجلد.
+            span.lang-en As6oura unfolds with restraint, revealing its depth layer by layer — composed to linger in memory before it lingers on skin.
+        .notes-grid
+          article.note-card(data-aos='fade-up', data-aos-delay='80')
+            span.note-number 01 /
+              span.lang-ar القمة
+              span.lang-en TOP NOTES
+            .note-image
+              img(src='https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=85', alt='برغموت ومكونات عطرية طبيعية / Bergamot and natural fragrance ingredients', loading='lazy')
+            h3
+              span.lang-ar بداية آسرة
+              span.lang-en A captivating opening
+            p
+              span.lang-ar برغموت إيطالي منعش ولمسة خزامى تفتح الباب بحضور مشرق وأنيق.
+              span.lang-en Bright Italian bergamot and a soft touch of lavender open with effortless elegance.
+            span.note-arrow ↗
+          article.note-card.featured(data-aos='fade-up', data-aos-delay='160')
+            span.note-number 02 /
+              span.lang-ar القلب
+              span.lang-en HEART NOTES
+            .note-image
+              img(src='https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=800&q=85', alt='عنبر ملكي وخشب فاخر / Royal amber and precious wood', loading='lazy')
+            h3
+              span.lang-ar دفء ملكي
+              span.lang-en A regal warmth
+            p
+              span.lang-ar عنبر ذهبي يلتقي بخشب الصندل الكريمي ليمنح الرائحة عمقاً ناعماً.
+              span.lang-en Golden amber meets creamy sandalwood for a smooth, magnetic heart.
+            span.note-arrow ↗
+          article.note-card(data-aos='fade-up', data-aos-delay='240')
+            span.note-number 03 /
+              span.lang-ar القاعدة
+              span.lang-en BASE NOTES
+            .note-image
+              img(src='https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=85', alt='دخان عود ومسك أسود / Oud smoke and black musk', loading='lazy')
+            h3
+              span.lang-ar أثر لا يزول
+              span.lang-en An enduring trail
+            p
+              span.lang-ar خشب العود المعتّق والمسك الأسود يتركان توقيعاً عميقاً يرافقك حتى النهاية.
+              span.lang-en Aged oud and black musk leave a deep, elegant trail that stays with you.
+            span.note-arrow ↗
+      section#story.story.section-shell
+        .story-image(data-aos='fade-left')
+          img(src='https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=1200&q=88', alt='دخان بخور عود فاخر / Luxurious oud incense smoke', loading='lazy')
+        .story-copy(data-aos='fade-right')
+          p.eyebrow
+            span.lang-ar لماذا أسطورة؟
+            span.lang-en WHY AS6OURA?
+          h2
+            span.lang-ar ليس عطراً فقط.
+            span.lang-en More than a fragrance.
+            br
+            em
+              span.lang-ar إنه حضور.
+              span.lang-en It is presence.
+          p
+            span.lang-ar اخترنا أجود الخامات من الشرق والغرب، وتركنا لها الوقت لتتوازن. النتيجة عطر يسبقك إلى المكان، ويترك انطباعاً لا يحتاج إلى شرح.
+            span.lang-en We selected exceptional materials from East and West, then gave them time to find their balance. The result arrives before you and leaves an impression without explanation.
+          .feature-list#features
+            .feature
+              span ✦
+              p
+                b
+                  span.lang-ar ثبات يدوم حتى 48 ساعة
+                  span.lang-en Up to 48 hours of longevity
+                small
+                  span.lang-ar تركيز عالٍ من خلاصة العطر
+                  span.lang-en A high concentration of parfum extract
+            .feature
+              span ✦
+              p
+                b
+                  span.lang-ar فوحان قوي ومتوازن
+                  span.lang-en A powerful, balanced sillage
+                small
+                  span.lang-ar حضور ملحوظ دون مبالغة
+                  span.lang-en Noticeable, never overwhelming
+            .feature
+              span ✦
+              p
+                b
+                  span.lang-ar عبوة كريستالية فاخرة
+                  span.lang-en A crystal-worthy bottle
+                small
+                  span.lang-ar تفاصيل ذهبية صُممت لتُهدى
+                  span.lang-en Golden details made for gifting
+      section.guarantee.section-shell(data-aos='fade-up')
+        .guarantee-badge ★
+          small
+            span.lang-ar ضمان
+            span.lang-en GOLDEN
+            br
+            span.lang-ar ذهبي
+            span.lang-en GUARANTEE
+        div
+          p.eyebrow
+            span.lang-ar جرّب قبل أن تفتح
+            span.lang-en TRY BEFORE YOU OPEN
+          h2
+            span.lang-ar رائحتك تستحق
+            span.lang-en Your scent deserves
+            br
+            em
+              span.lang-ar تجربة بلا مخاطرة.
+              span.lang-en a risk-free first impression.
+        p
+          span.lang-ar ستصلك عينة مجانية 5 مل مع الشحنة. جرّبها أولاً، وإذا لم تكن أسطورة هي رائحتك، نضمن لك حق الاسترجاع الفوري قبل فتح العبوة الرئيسية.
+          span.lang-en A complimentary 5ml sample arrives with your order. Try it first, and if As6oura is not your scent, return the unopened bottle immediately.
+      section#reviews.reviews.section-shell
+        .section-intro.centered(data-aos='fade-up')
+          p.eyebrow
+            span.lang-ar تجارب حقيقية
+            span.lang-en REAL EXPERIENCES
+          h2
+            span.lang-ar حين يتكلم
+            span.lang-en When the trail
+            br
+            em
+              span.lang-ar الأثر.
+              span.lang-en speaks.
+          .rating
+            strong 4.9
+            span ★★★★★
+            small
+              span.lang-ar من أكثر من 2,400 طلب موثق
+              span.lang-en from 2,400+ verified orders
+        .review-grid
+          article(data-aos='fade-up')
+            .stars ★★★★★
+            p.lang-ar “من أول رشة عرفت أنه سيكون عطري المميز. فخم، هادئ، وكل من حولي يسألني عنه.”
+            p.lang-en “From the first spray, I knew it would become my signature. Refined, quiet, and impossible not to ask about.”
+            b
+              span.lang-ar نورة العتيبي
+              span.lang-en Noura Alotaibi
+              small ✓
+          article(data-aos='fade-up', data-aos-delay='100')
+            .stars ★★★★★
+            p.lang-ar “وصلت العينة مع الطلب وكانت فكرة رائعة. العطر ثابت فعلاً ورائحته تتغير بشكل جميل طوال اليوم.”
+            p.lang-en “The sample made the purchase feel effortless. It truly lasts, and the scent evolves beautifully through the day.”
+            b
+              span.lang-ar سلمان الحربي
+              span.lang-en Salman Alharbi
+              small ✓
+          article(data-aos='fade-up', data-aos-delay='200')
+            .stars ★★★★★
+            p.lang-ar “العبوة أجمل من الصور والتغليف ملكي جداً. أخذته هدية، وانتهى بي الأمر بطلب واحد لي.”
+            p.lang-en “The bottle is even more beautiful in person. I bought it as a gift, then ordered one for myself.”
+            b
+              span.lang-ar ريم محمد
+              span.lang-en Reem Mohammed
+              small ✓
+      section#order.order.section-shell
+        .order-heading(data-aos='fade-up')
+          p.eyebrow
+            span.lang-ar الكمية محدودة
+            span.lang-en LIMITED BATCH
+          h2
+            span.lang-ar اجعل أسطورة
+            span.lang-en Make As6oura
+            br
+            em
+              span.lang-ar توقيعك اليوم.
+              span.lang-en your signature today.
+          p
+            span.lang-ar املأ البيانات وسنتواصل معك لتأكيد الطلب. الدفع عند الاستلام — بلا بطاقات ولا تعقيد.
+            span.lang-en Leave your details and we will confirm your order. Cash on delivery — no cards, no friction.
+          .order-price
+            del 299 SAR
+            strong 179
+              small SAR
+            span
+              span.lang-ar عبوة 100 مل
+              span.lang-en 100 ml bottle
+        form#order-form.order-form(data-aos='fade-up', data-aos-delay='120')
+          h3
+            span.lang-ar تفاصيل الشحنة
+            span.lang-en Delivery details
+          .form-grid
+            label
+              span.lang-ar الاسم الكامل
+              span.lang-en Full name
+              input(type='text', name='name', required, placeholder='اكتب اسمك هنا / Your name')
+            label
+              span.lang-ar رقم الهاتف
+              span.lang-en Phone number
+              input(type='tel', name='phone', required, pattern='[0-9+() -]{8,}', placeholder='05xxxxxxxx')
+          label
+            span.lang-ar العنوان بالتفصيل
+            span.lang-en Full address
+            input(type='text', name='address', required, placeholder='الحي، الشارع، رقم المبنى / District, street, building')
+          label
+            span.lang-ar المحافظة / المدينة
+            span.lang-en City
+            select(name='city', required)
+              option(value='') اختر مدينتك / Select your city
+              option الرياض / Riyadh
+              option جدة / Jeddah
+              option الدمام / Dammam
+              option مكة المكرمة / Makkah
+              option المدينة المنورة / Madinah
+              option أخرى / Other
+          fieldset
+            legend
+              span.lang-ar اختر باقتك
+              span.lang-en Choose your bundle
+            label.package-option
+              input(type='radio', name='package', value='عبوة واحدة — 179 ر.س / One bottle — 179 SAR', checked)
+              span
+                b
+                  span.lang-ar عبوة واحدة
+                  span.lang-en One bottle
+                small
+                  span.lang-ar 179 ر.س + شحن مجاني
+                  span.lang-en 179 SAR + free delivery
+              strong
+                span.lang-ar الأكثر طلباً
+                span.lang-en Best seller
+            label.package-option
+              input(type='radio', name='package', value='عبوتان — 299 ر.س / Two bottles — 299 SAR')
+              span
+                b
+                  span.lang-ar عبوتان
+                  span.lang-en Two bottles
+                small
+                  span.lang-ar 299 ر.س — وفر 59 ر.س
+                  span.lang-en 299 SAR — save 59 SAR
+              strong
+                span.lang-ar قيمة أفضل
+                span.lang-en Better value
+          button.button.button-gold.pulse-glow(type='submit')
+            span.lang-ar تأكيد الطلب عبر واتساب
+            span.lang-en Confirm via WhatsApp
+            span ←
+          small.form-note
+            span.lang-ar بالضغط على الزر ستفتح محادثة واتساب جاهزة بالتفاصيل. لا يتم حفظ بياناتك داخل الموقع.
+            span.lang-en This opens a pre-filled WhatsApp message. Your data is not stored on this website.
+          p.form-status(role='status')
+    footer
+      a.logo(href='#top')
+        span.logo-mark أ
+        span.lang-ar أُسـطـورة
+        span.lang-en As6oura
+      p
+        span.lang-ar رائحة تُروى. حضور يُذكر.
+        span.lang-en A scent worth telling. A presence worth remembering.
+      span © 2026 As6oura Royal Perfumery
+    a.floating-wa(href='https://wa.me/201000000000', target='_blank', rel='noreferrer', aria-label='WhatsApp')
+      span ◔
+      small WhatsApp
+    script(src='https://unpkg.com/aos@2.3.1/dist/aos.js')
+    script(src='js/scripts.js')
