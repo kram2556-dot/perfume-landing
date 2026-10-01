@@ -11829,3 +11829,33 @@ html[data-lang=en] .note-number {
   width: 100%;
   z-index: 1;
 }
+
+/* Keep the offer countdown and navigation together at the top while scrolling. */
+body {
+  padding-top: 38px;
+}
+
+.offer-strip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1040;
+}
+
+#mainNav {
+  top: 38px;
+  z-index: 1030;
+}
+
+@media (max-width: 767.98px) {
+  body {
+    padding-top: 34px;
+  }
+  .offer-strip {
+    min-height: 34px;
+  }
+  #mainNav {
+    top: 34px;
+  }
+}
